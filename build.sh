@@ -2,6 +2,7 @@
 
 version=`cat version`
 sed -i 's/imageTag.*/imageTag\:\ '"$version"'/' application/configs/dev.yaml
+sed -i 's/version.*/version\:\ '"$version"'/' application/Chart.yaml
 
 if [ ! -z "$1" ]; then
 sed -i "4s/.*/$1/" index.html
