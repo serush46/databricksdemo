@@ -1,8 +1,8 @@
-imageName: dev
+imageName: app-release
 environment: dev
 imageTag: 1.0.0
-cpuRequests: 200m
-cpuLimits: 100m
+cpuRequests: 100m
+cpuLimits: 200m
 memoryRequests: 0.7G
 memoryLimits: 1G
 imageRepo: 095415062695.dkr.ecr.us-west-2.amazonaws.com
