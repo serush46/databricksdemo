@@ -1,0 +1,9 @@
+imageName: dev
+environment: dev
+imageTag: 1.0.0
+cpuRequests: 200m
+cpuLimits: 100m
+memoryRequests: 0.7G
+memoryLimits: 1G
+imageRepo: xxxxx.dkr.ecr.us-west-2.amazonaws.com
+jenkinsPort: 80
