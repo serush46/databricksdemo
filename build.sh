@@ -4,8 +4,10 @@ version=`cat version`
 sed -i 's/imageTag.*/imageTag\:\ '"$version"'/' application/configs/dev.yaml
 sed -i 's/version.*/version\:\ '"$version"'/' application/Chart.yaml
 
-if [ ! -z "$1" ]; then
-sed -i "4s/.*/$1/" index.html
+if [ ! -z "$2" ] && [ ! -z "$1" ]; then
+  sed -i "4s/.*/$2/" index.html
+elif [ -z "$1" ]; then
+  echo "Auto Trigger"
 else
   echo Please supply input variables
   exit 1
